@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetSpot — AI-Powered Pet Camera & Smart Feeder</title>
+  <meta name="description" content="Never worry about your pet again. PetSpot's AI camera and smart feeder let you see, talk, and care for your pet from anywhere." />
+  <meta property="og:title" content="PetSpot — AI-Powered Pet Camera & Smart Feeder" />
+  <meta property="og:description" content="See, talk, and care for your pet from anywhere." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://petspot.com/og-image.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    * { font-family: 'Inter', system-ui, sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🐾</span>
+        <span class="text-xl font-bold tracking-tight">PetSpot</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#product" class="hover:text-gray-900 transition-colors">Product</a>
+        <a href="#features" class="hover:text-gray-900 transition-colors">Features</a>
+        <a href="#about" class="hover:text-gray-900 transition-colors">About</a>
+        <a href="#waitlist" class="bg-gray-900 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 rounded-full text-sm text-gray-600 mb-6">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse inline-block"></span>
+            Coming Summer 2026
+          </div>
+          <h1 class="text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+            Your pet, always
+            <span class="text-green-600"> within reach.</span>
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
+            PetSpot combines an AI-powered camera with a smart feeder so you
+            can see, talk, and care for your pet — no matter where you are.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="#waitlist" class="inline-flex items-center justify-center bg-gray-900 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-gray-800 transition-colors text-base">
+              Get Early Access →
+            </a>
+            <a href="#features" class="inline-flex items-center justify-center border border-gray-300 text-gray-700 px-8 py-3.5 rounded-full font-semibold hover:bg-gray-50 transition-colors text-base">
+              See How It Works
+            </a>
+          </div>
+          <div class="flex items-center gap-6 mt-8 text-sm text-gray-500 flex-wrap">
+            <span class="flex items-center gap-2"><span class="text-green-600 font-bold">✓</span> No hidden fees</span>
+            <span class="flex items-center gap-2"><span class="text-green-600 font-bold">✓</span> Free app</span>
+            <span class="flex items-center gap-2"><span class="text-green-600 font-bold">✓</span> 30-day trial</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+            <img src="hero-pet-camera.jpg" alt="PetSpot AI pet camera and smart feeder in a modern home" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="py-12 border-y border-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-center text-sm text-gray-500 mb-6 font-medium uppercase tracking-wider">Featured in</p>
+      <div class="flex justify-center gap-12 items-center flex-wrap">
+        <span class="text-gray-300 text-xl font-bold">TECH TODAY</span>
+        <span class="text-gray-300 text-xl font-bold">PET WEEKLY</span>
+        <span class="text-gray-300 text-xl font-bold">WIRED</span>
+        <span class="text-gray-300 text-xl font-bold">THE VERGE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="product" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold tracking-tight mb-4">The complete pet care hub</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">One device that watches, feeds, and comforts your pet — powered by AI that learns their habits.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 transition-colors">
+          <span class="text-4xl block mb-4">📷</span>
+          <h3 class="text-xl font-bold mb-3">4K AI Camera</h3>
+          <p class="text-gray-600 leading-relaxed">Wide-angle 4K with night vision. AI detects barks, movement, and unusual behavior — alerts your phone instantly.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 transition-colors">
+          <span class="text-4xl block mb-4">🍽️</span>
+          <h3 class="text-xl font-bold mb-3">Smart Feeder</h3>
+          <p class="text-gray-600 leading-relaxed">Scheduled portions, remote treat tossing, and portion control via app. Works with kibble, wet food, and treats.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 transition-colors">
+          <span class="text-4xl block mb-4">🎙️</span>
+          <h3 class="text-xl font-bold mb-3">Two-Way Audio</h3>
+          <p class="text-gray-600 leading-relaxed">Talk to your pet in real time. AI-powered noise cancellation so your voice comes through crystal clear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold tracking-tight mb-4">Smarter than a pet camera</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">PetSpot is built on AI that understands your pet, not just detects motion.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl p-8">
+          <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-white text-lg">✦</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">AI Behavior Alerts</h3>
+          <p class="text-gray-600 leading-relaxed">Not just motion — PetSpot learns your pet's normal patterns and alerts you when something's off.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8">
+          <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-white text-lg">✦</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Activity Diary</h3>
+          <p class="text-gray-600 leading-relaxed">Daily report of eating, sleeping, and activity. Spot health changes before they become problems.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8">
+          <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-white text-lg">✦</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Multi-Pet Recognition</h3>
+          <p class="text-gray-600 leading-relaxed">Distinguishes between your dog, cat, and even the neighbor's cat. Per-pet feeding schedules and logs.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8">
+          <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+            <span class="text-white text-lg">✦</span>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Treat Toss on Demand</h3>
+          <p class="text-gray-600 leading-relaxed">See your pet being good? Toss a treat with a tap. Works from anywhere in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="text-5xl block mb-6">🐕</span>
+      <h2 class="text-4xl font-bold tracking-tight mb-6">Built by pet parents, for pet parents</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-8">
+        We love our pets. But we hate worrying about them when we're away. PetSpot was born in 2025 when our founder realized existing pet cameras were either too complicated, too expensive, or required monthly subscriptions to work properly.
+      </p>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        We set out to build something different: a beautiful, simple, AI-powered device that actually understands your pet — without locking basic features behind a paywall.
+      </p>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section id="waitlist" class="py-24 px-6 bg-gray-900 text-white">
+    <div class="max-w-2xl mx-auto text-center">
+      <span class="text-5xl block mb-6">🎉</span>
+      <h2 class="text-4xl font-bold tracking-tight mb-4">Be the first to know</h2>
+      <p class="text-gray-400 text-lg mb-8">Join the waitlist for early access pricing, exclusive updates, and a chance to beta test PetSpot for free.</p>
+      <div class="max-w-md mx-auto">
+        <form class="flex flex-col sm:flex-row gap-3" id="waitlist-form" netlify name="waitlist" method="POST" action="/thank-you">
+          <input type="email" name="email" placeholder="Enter your email" class="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors text-sm" required />
+          <input type="hidden" name="form-name" value="waitlist" />
+          <button type="submit" class="bg-green-500 text-gray-900 px-8 py-3.5 rounded-full font-bold hover:bg-green-400 transition-colors text-sm whitespace-nowrap">Join Waitlist →</button>
+        </form>
+        <p class="text-gray-500 text-sm mt-4">No spam. Unsubscribe anytime. Early birds get 20% off.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🐾</span>
+        <span class="font-bold text-lg">PetSpot</span>
+      </div>
+      <div class="flex items-center gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-gray-700">Privacy</a>
+        <a href="#" class="hover:text-gray-700">Terms</a>
+        <a href="#" class="hover:text-gray-700">Contact</a>
+      </div>
+      <p class="text-sm text-gray-400">© 2026 PetSpot. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Waitlist form handler -->
+  <script>
+    document.getElementById('waitlist-form')?.addEventListener('submit', function(e) {
+      // Let Netlify Forms handle the submission
+      // Show a quick success confirmation
+      setTimeout(function() {
+        const btn = document.querySelector('#waitlist-form button');
+        btn.textContent = '✓ You\'re on the list!';
+        btn.classList.remove('bg-green-500', 'hover:bg-green-400');
+        btn.classList.add('bg-green-700', 'cursor-default');
+        btn.disabled = true;
+      }, 100);
+    });
+  </script>
+
+</body>
+</html>
