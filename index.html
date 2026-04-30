@@ -342,8 +342,8 @@
       <h2 class="text-4xl font-bold tracking-tight mb-4">Never leave them alone again</h2>
       <p class="text-gray-400 text-lg mb-8">Join the waitlist for early access pricing, exclusive updates, and a chance to beta test PetSpot for free.</p>
       <div class="max-w-md mx-auto">
-        <form class="flex flex-col sm:flex-row gap-3" id="waitlist-form" method="POST" action="https://formsubmit.co/strong1007@163.com">
-          <input type="email" name="email" placeholder="Enter your email" class="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition-colors text-sm" required />
+        <form class="flex flex-col sm:flex-row gap-3" id="waitlist-form" method="POST" action="https://formsubmit.co/strong1007@163.com" onsubmit="return submitToFeishu(event)">
+          <input type="email" name="email" id="email-input" placeholder="Enter your email" class="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition-colors text-sm" required />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="https://pawsmart-ai-app.netlify.app/thank-you" />
           <button type="submit" class="bg-green-500 text-gray-900 px-8 py-3.5 rounded-full font-bold hover:bg-green-400 transition-colors text-sm whitespace-nowrap shadow-lg shadow-green-500/20">
@@ -356,6 +356,37 @@
       </div>
     </div>
   </section>
+
+  <script>
+    var FEISHU_BASE = 'Pzv8bP9C0a536fsVe3FctZWqnld';
+    var FEISHU_TABLE = 'tblq8sKyGyct351C';
+    var FEISHU_TOKEN = 't-g1044ulFZ3YQDCSDYN5U4KIAIP3RC2TB7BUXGQCA';
+
+    function submitToFeishu(e) {
+      var email = document.getElementById('email-input').value;
+      if (!email) return false;
+
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var ts = today.getTime();
+
+      fetch('https://open.feishu.cn/open-apis/bitable/v1/apps/' + FEISHU_BASE + '/tables/' + FEISHU_TABLE + '/records', {
+        method: 'POST',
+        headers: {
+          'Authorization': 'Bearer ' + FEISHU_TOKEN,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          fields: {
+            '邮箱地址': email,
+            '提交日期': ts,
+            '是否回复': '未回复'
+          }
+        })
+      }).catch(function(err) {});
+      return true;
+    }
+  </script>
 
   <!-- Footer -->
   <footer class="py-12 px-6 border-t border-gray-100 bg-white">
