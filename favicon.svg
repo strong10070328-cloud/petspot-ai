@@ -1,5 +1,11 @@
 <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="32" cy="32" r="28" fill="none" stroke="#EA580C" stroke-width="4"/>
-  <circle cx="32" cy="32" r="18" fill="none" stroke="#EA580C" stroke-width="2" opacity="0.6"/>
-  <circle cx="32" cy="32" r="6" fill="#EA580C"/>
+  <!-- 摄像头主体简化 -->
+  <rect x="14" y="10" width="36" height="36" rx="10" fill="none" stroke="#EA580C" stroke-width="3.5"/>
+  
+  <!-- 镜头简化 -->
+  <circle cx="32" cy="28" r="10" fill="none" stroke="#EA580C" stroke-width="2.5"/>
+  <circle cx="32" cy="28" r="4" fill="#EA580C"/>
+  
+  <!-- 零食点 -->
+  <circle cx="32" cy="52" r="3" fill="#EA580C"/>
 </svg>

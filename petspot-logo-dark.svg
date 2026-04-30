@@ -1,0 +1,19 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- 摄像头主体 -->
+  <rect x="28" y="20" width="72" height="72" rx="20" fill="none" stroke="#F97316" stroke-width="5"/>
+  
+  <!-- 镜头外圈 -->
+  <circle cx="64" cy="56" r="24" fill="none" stroke="#F97316" stroke-width="3.5"/>
+  
+  <!-- 镜头内圈 -->
+  <circle cx="64" cy="56" r="10" fill="#F97316"/>
+  
+  <!-- 镜头高光 -->
+  <circle cx="58" cy="50" r="3" fill="#FFFFFF" opacity="0.7"/>
+  
+  <!-- 零食本体 -->
+  <circle cx="64" cy="96" r="6" fill="#F97316"/>
+  
+  <!-- 下落路径 -->
+  <path d="M64 80 Q70 88 64 96" fill="none" stroke="#F97316" stroke-width="2.5" stroke-dasharray="3 3" opacity="0.8"/>
+</svg>
