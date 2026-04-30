@@ -358,31 +358,14 @@
   </section>
 
   <script>
-    var FEISHU_BASE = 'Pzv8bP9C0a536fsVe3FctZWqnld';
-    var FEISHU_TABLE = 'tblq8sKyGyct351C';
-    var FEISHU_TOKEN = 't-g1044ulFZ3YQDCSDYN5U4KIAIP3RC2TB7BUXGQCA';
-
     function submitToFeishu(e) {
       var email = document.getElementById('email-input').value;
       if (!email) return false;
 
-      var today = new Date();
-      today.setHours(0, 0, 0, 0);
-      var ts = today.getTime();
-
-      fetch('https://open.feishu.cn/open-apis/bitable/v1/apps/' + FEISHU_BASE + '/tables/' + FEISHU_TABLE + '/records', {
+      fetch('/.netlify/functions/feishu-write', {
         method: 'POST',
-        headers: {
-          'Authorization': 'Bearer ' + FEISHU_TOKEN,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          fields: {
-            '邮箱地址': email,
-            '提交日期': ts,
-            '是否回复': '未回复'
-          }
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
       }).catch(function(err) {});
       return true;
     }
