@@ -1,0 +1,16 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- 碗身：俯视视角下的碗沿 -->
+  <ellipse cx="64" cy="72" rx="44" ry="16" fill="#EA580C" opacity="0.12"/>
+  
+  <!-- 碗的外轮廓 → 也是镜头外圈 -->
+  <circle cx="64" cy="56" r="40" fill="none" stroke="#EA580C" stroke-width="5"/>
+  
+  <!-- 碗的内壁 / 镜头第二圈 -->
+  <circle cx="64" cy="56" r="28" fill="none" stroke="#EA580C" stroke-width="2.5" opacity="0.5"/>
+  
+  <!-- 镜头中心点 → 也是碗底的食物/水珠 -->
+  <circle cx="64" cy="56" r="8" fill="#EA580C"/>
+  
+  <!-- 高光：左上角月牙（增加立体感） -->
+  <path d="M44 36 A32 32 0 0 1 72 28" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+</svg>
