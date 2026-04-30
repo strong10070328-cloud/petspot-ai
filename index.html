@@ -342,7 +342,7 @@
       <h2 class="text-4xl font-bold tracking-tight mb-4">Never leave them alone again</h2>
       <p class="text-gray-400 text-lg mb-8">Join the waitlist for early access pricing, exclusive updates, and a chance to beta test PetSpot for free.</p>
       <div class="max-w-md mx-auto">
-        <form class="flex flex-col sm:flex-row gap-3" name="waitlist" method="POST" action="/thank-you.html" data-netlify="true">
+        <form class="flex flex-col sm:flex-row gap-3" id="waitlist-form" name="waitlist" method="POST" data-netlify="true">
           <input type="email" name="email" placeholder="Enter your email" class="flex-1 px-5 py-3.5 rounded-full bg-white/10 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-green-400 transition-colors text-sm" required />
           <input type="hidden" name="form-name" value="waitlist" />
           <button type="submit" class="bg-green-500 text-gray-900 px-8 py-3.5 rounded-full font-bold hover:bg-green-400 transition-colors text-sm whitespace-nowrap shadow-lg shadow-green-500/20">
@@ -356,6 +356,31 @@
     </div>
   </section>
 
+  <!-- Waitlist form handler -->
+  <script>
+    document.getElementById('waitlist-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var btn = form.querySelector('button');
+      var email = form.querySelector('input[name="email"]').value;
+
+      if (!email) return;
+
+      btn.textContent = '⏳ Submitting...';
+      btn.disabled = true;
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onload = function() {
+        window.location.href = '/thank-you';
+      };
+      xhr.onerror = function() {
+        window.location.href = '/thank-you';
+      };
+      xhr.send('form-name=waitlist&email=' + encodeURIComponent(email));
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="py-12 px-6 border-t border-gray-100 bg-white">
